@@ -20,6 +20,11 @@ public class BookingResource {
         inMemoryRecord.put("2", new BookingRecord("N", "I"));
     }
 
+    /**
+     * Get Customer Info by ID
+     * @param itineraryId
+     * @return
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public BookingRecord getCustomerProfile(@QueryParam(ITINERARY_ID) String itineraryId) {
