@@ -7,6 +7,7 @@ public class BookingRecord {
     private String firstName;
     private String lastName;
     private String birthday;
+    private String something;
     public BookingRecord() {
     }
 
