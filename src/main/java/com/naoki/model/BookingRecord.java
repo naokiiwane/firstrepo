@@ -6,7 +6,7 @@ package com.naoki.model;
 public class BookingRecord {
     private String firstName;
     private String lastName;
-
+    private String birthday;
     public BookingRecord() {
     }
 
