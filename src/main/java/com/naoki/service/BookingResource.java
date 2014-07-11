@@ -26,8 +26,9 @@ public class BookingResource {
      * @return
      */
     @GET
+    @Path("{itineraryId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public BookingRecord getCustomerProfile(@QueryParam(ITINERARY_ID) String itineraryId) {
+    public BookingRecord getCustomerProfile(@PathParam(ITINERARY_ID) String itineraryId) {
         if(itineraryId != null){
             return inMemoryRecord.get(itineraryId);
         }
